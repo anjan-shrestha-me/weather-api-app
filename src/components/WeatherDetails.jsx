@@ -34,15 +34,15 @@ function WeatherDetails({ weather }) {
       value: `${weather.current.pressure_mb} hPa`,
     },
     {
-  icon: <WiSunrise className="text-yellow-500" />,
-  title: "Sunrise",
-  value: weather.forecast.forecastday[0].astro.sunrise,
-},
-{
-  icon: <WiSunset className="text-orange-500" />,
-  title: "Sunset",
-  value: weather.forecast.forecastday[0].astro.sunset,
-},
+      icon: <WiSunrise className="text-yellow-500" />,
+      title: "Sunrise",
+      value: weather.forecast.forecastday[0].astro.sunrise,
+    },
+    {
+      icon: <WiSunset className="text-orange-500" />,
+      title: "Sunset",
+      value: weather.forecast.forecastday[0].astro.sunset,
+    },
   ];
 
   return (
